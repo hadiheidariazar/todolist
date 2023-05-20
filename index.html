@@ -29,6 +29,25 @@
                         d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                 </svg>
                 افروزن </button>
+
+            <div class="modal fade" id="deleteModal" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <div class="row">
+                                <div class="col-12 mb-4">
+                                    <h5 class="modal-title text-dark"> آیا میخوای این یادداشتت رو حذف کنی؟ </h5>
+                                </div>
+                                <div class="col-12"><button type="button" class="p-2 rounded-2 px-3 bg-outline-orange dislike-remove-todo"
+                                        data-bs-dismiss="modal"> نه دستم خورد </button>
+                                    <button type="button" class="p-2 rounded-2 px-3 bg-orange text-white like-remove-todo" data-bs-dismiss="modal"> اره حذف کن </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <button class="btn-clear-all-todo py-1 px-2 btn bg-orange">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
                     viewBox="0 0 16 16">
@@ -45,10 +64,12 @@
 
     <footer class="bg-orange p-2 text-center fixed-bottom">
         <p class="text-footer"> ساخته شده با
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
-                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
-              </svg>
-            توسط هادی حیدری آذر 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                <path
+                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+            </svg>
+            توسط هادی حیدری آذر
         </p>
     </footer>
 

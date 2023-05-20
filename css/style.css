@@ -54,6 +54,11 @@ body{
     font-size: 0.8rem;
 }
 
+.like-remove-todo,
+.dislike-remove-todo{
+    border: 2px solid var(--theme-color);
+}
+
 @media screen and (max-width: 500px) {
     .title-header{
         font-size: 3.8rem;

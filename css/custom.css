@@ -14,8 +14,10 @@
     background-color: var(--theme-color);
 }
 
-.bg-purple{
-    background-color: #9003ff;
+.bg-outline-orange{
+    background-color: #fff;
+    color: var(--theme-color);
+    border: 2px solid var(--theme-color);
 }
 
 .fb{
