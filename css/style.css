@@ -11,7 +11,22 @@ body{
     color: var(--theme-color);
 }
 
+#input-box-add-todo:focus{
+    outline: none;
+    appearance: none;
+    border: 1px solid var(--theme-color);
+    box-shadow: 0 0 20px 0px var(--theme-color);
+}
 
+.btn{
+    border: 2px solid var(--theme-color);
+    color: #fff;
+}
+
+.btn:hover{
+    border: 2px solid var(--theme-color);
+    color: var(--theme-color);
+}
 
 @media screen and (max-width: 500px) {
     .title-header{
