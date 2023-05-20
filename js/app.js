@@ -17,9 +17,30 @@ inputAddTodoElem.addEventListener('keyup', e => {
     if (e.keyCode === 13) {
         if (inputAddTodoValue) {
             console.log(inputAddTodoValue)
-            generateTodoTemplateToDom(todosArray)
-        }
+            if (isUpdate) {
 
+            } else {
+                let newTodo = {
+                    id: todosArray.length + 1,
+                    title: inputAddTodoValue,
+                    status: false,
+                    created_Date: createNotesDate()
+                }
+        
+                todosArray.push(newTodo)
+        
+                setItemTodoInfoInLocalStorage(todosArray)
+                generateTodoTemplateToDom(todosArray)
+                ClearInputValue()
+            }
+        }
+    }
+})
+
+btnAddTodoElem.addEventListener('click', () => {
+    inputAddTodoValue = inputAddTodoElem.value.trim()
+    if (inputAddTodoValue) {
+        console.log(inputAddTodoValue)
         if (isUpdate) {
 
         } else {
@@ -34,34 +55,15 @@ inputAddTodoElem.addEventListener('keyup', e => {
     
             setItemTodoInfoInLocalStorage(todosArray)
             generateTodoTemplateToDom(todosArray)
+            ClearInputValue()
         }
     }
 })
 
-btnAddTodoElem.addEventListener('click', () => {
-    inputAddTodoValue = inputAddTodoElem.value.trim()
-    if (inputAddTodoValue) {
-        console.log(inputAddTodoValue)
-        generateTodoTemplateToDom(todosArray)
-    }
-
-    if (isUpdate) {
-
-    } else {
-        let newTodo = {
-            id: todosArray.length + 1,
-            title: inputAddTodoValue,
-            status: false,
-            created_Date: createNotesDate()
-        }
-
-        todosArray.push(newTodo)
-
-        setItemTodoInfoInLocalStorage(todosArray)
-        generateTodoTemplateToDom(todosArray)
-    }
+btnClearAllTodosElem.addEventListener('click', () => {
+    localStorage.clear()
+    containerTodosElem.innerHTML = ''
 })
-
 
 function createNotesDate() {
     return new Date().toLocaleDateString('fa-IR')
@@ -81,6 +83,11 @@ function getItemTodoInfoInLocalStorage(todosArray) {
     }
 
     return todosArray
+}
+
+function ClearInputValue() {
+    inputAddTodoElem.value = ''
+    inputAddTodoElem.focus()
 }
 
 window.addEventListener('load', () => {
