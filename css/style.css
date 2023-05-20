@@ -5,3 +5,17 @@ body{
     font-family: vazir;
     color: #fff;
 }
+
+.title-header{
+    font-size: 5rem;
+    color: var(--theme-color);
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .title-header{
+        font-size: 3.8rem;
+        color: var(--theme-color);
+    }
+}
