@@ -4,6 +4,7 @@ body{
     background: var(--body-color);
     font-family: vazir;
     color: #fff;
+    line-height: 1.2rem;
 }
 
 .title-header{
@@ -18,14 +19,39 @@ body{
     box-shadow: 0 0 20px 0px var(--theme-color);
 }
 
-.btn{
+.btn-add-todo,
+.btn-clear-all-todo{
     border: 2px solid var(--theme-color);
     color: #fff;
 }
 
-.btn:hover{
+.btn-clear-all-todo:hover,
+.btn-add-todo:hover{
     border: 2px solid var(--theme-color);
     color: var(--theme-color);
+}
+
+.card-body{
+    text-align: justify;
+}
+
+.card-menu{
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    overflow: hidden;
+    width: 1.2rem;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.dropdown-item{
+    cursor: pointer;
+}
+
+.text-date{
+    font-size: 0.8rem;
 }
 
 @media screen and (max-width: 500px) {
