@@ -1,0 +1,23 @@
+@import url("./reset.css");
+
+:root{
+    --body-color: #333;
+    --theme-color: #ff4016;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url('./../font/Vazir-Light.ttf');
+}
+
+.bg-orange{
+    background-color: var(--theme-color);
+}
+
+.bg-purple{
+    background-color: #9003ff;
+}
+
+.fb{
+    font-weight: bolder;
+}

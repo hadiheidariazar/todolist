@@ -1,0 +1,7 @@
+@import url('./custom.css');
+
+body{
+    background: var(--body-color);
+    font-family: vazir;
+    color: #fff;
+}
