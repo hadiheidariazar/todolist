@@ -38,15 +38,51 @@
                                 <div class="col-12 mb-4">
                                     <h5 class="modal-title text-dark"> آیا میخوای این یادداشتت رو حذف کنی؟ </h5>
                                 </div>
-                                <div class="col-12"><button type="button" class="p-2 rounded-2 px-3 bg-outline-orange dislike-remove-todo"
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6 px-1">
+                                            <button type="button" class="rounded-2 p-2 w-100 bg-outline-orange dislike-remove-todo"
                                         data-bs-dismiss="modal"> نه دستم خورد </button>
-                                    <button type="button" class="p-2 rounded-2 px-3 bg-orange text-white like-remove-todo" data-bs-dismiss="modal"> اره حذف کن </button>
+                                        </div>
+                                        <div class="col-6 px-1">
+                                            <button type="button" class="rounded-2 p-2 w-100 bg-orange text-white like-remove-todo" data-bs-dismiss="modal"> اره حذف کن </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="modal fade text-dark" id="editModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="editModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                      <h1 class="modal-title fs-5" id="editModalLabel"> ویرایش کردن یادداشت </h1>
+                    </div>
+                    <div class="modal-body">
+                      <form onsubmit="event.preventDefault()">
+                        <div class="mb-3">
+                          <label for="text-todo" class="col-form-label"> متن یادداشت </label>
+                          <textarea class="form-control input-update-text-todo" rows="5" id="text-todo" placeholder="متن یادداشت..."></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row w-100">
+                            <div class="col-6 px-1">
+                                <button type="button" class="p-2 rounded-2 w-100 bg-outline-orange dislike-edit-todo" data-bs-dismiss="modal"> لغو </button>
+                            </div>
+                            <div class="col-6 px-1">
+                                <button type="button" class="p-2 rounded-2 w-100 bg-orange text-white like-edit-todo" data-bs-dismiss="modal"> ویرایش </button>
+                            </div>
+                        </div>
+        
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             <button class="btn-clear-all-todo py-1 px-2 btn bg-orange">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"

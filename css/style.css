@@ -59,6 +59,18 @@ body{
     border: 2px solid var(--theme-color);
 }
 
+.like-edit-todo,
+.dislike-edit-todo{
+    border: 2px solid var(--theme-color);
+}
+
+.input-update-text-todo:focus{
+    outline: none;
+    appearance: none;
+    border: 1px solid var(--theme-color);
+    box-shadow: 0 0 20px 0px var(--theme-color);
+}
+
 @media screen and (max-width: 500px) {
     .title-header{
         font-size: 3.8rem;
