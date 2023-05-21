@@ -157,6 +157,7 @@ function removeMainTodo(todoIndex) {
 
         generateTodoTemplateToDom(allTodos)
         setItemTodoInfoInLocalStorage(allTodos)
+        location.reload()
     })
 
 }
